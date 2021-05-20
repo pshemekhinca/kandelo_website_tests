@@ -1,5 +1,3 @@
-from configuration import config_reader
-from src.pages import page_factory
 from tests.test_data import web_reader
 
 
