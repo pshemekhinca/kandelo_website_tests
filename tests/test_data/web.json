@@ -1,0 +1,18 @@
+{
+    "__urls__": "__list of urls for all pages__",
+    "main_url": "https://kandelo.eu/",
+    "en_homepage_url": "https://kandelo.eu/en/kandelo-homepage",
+    "en_products_url": "https://kandelo.eu/en/products",
+    "en_your_url": "https://kandelo.eu/en/your_candle",
+    "en_buy_url": "https://kandelo.eu/en/where-to-buy",
+    "en_faq_url": "https://kandelo.eu/en/faq_en",
+    "en_contact_url": "https://kandelo.eu/en/kandelo-homepage?anchorElement=element_1040&scrollMargin=100",
+
+
+    "correct_user_login": "jdoe@gmail.com",
+    "correct_user_pass": "jdoe1234",
+    "incorrect_user_login": "jdoe12",
+    "username": "admin@yourstore.com",
+    "password": "admin"
+  }
+

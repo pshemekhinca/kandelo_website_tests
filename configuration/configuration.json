@@ -1,0 +1,12 @@
+{
+  "main_url": "https://kandelo.eu/",
+  "en_homepage_url": "https://kandelo.eu/en/kandelo-homepage",
+  "en_products_url": "https://kandelo.eu/en/products",
+  "chromedriver_path": "/home/peha/projects/testowe/test_kandelo/configuration/drivers/chromedriver",
+  "correct_user_login": "jdoe@gmail.com",
+  "correct_user_pass": "jdoe1234",
+  "incorrect_user_login": "jdoe12",
+  "base_url": "https://admin-demo.nopcommerce.com/",
+  "username": "admin@yourstore.com",
+  "password": "admin"
+}
