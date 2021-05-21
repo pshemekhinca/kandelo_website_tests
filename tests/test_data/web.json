@@ -1,5 +1,5 @@
 {
-    "__urls__": "__list of urls for all pages__",
+    "__urls__": "__urls for all pages__",
     "main_url": "https://kandelo.eu/",
     "en_homepage_url": "https://kandelo.eu/en/kandelo-homepage",
     "en_products_url": "https://kandelo.eu/en/products",
@@ -8,11 +8,10 @@
     "en_faq_url": "https://kandelo.eu/en/faq_en",
     "en_contact_url": "https://kandelo.eu/en/kandelo-homepage?anchorElement=element_1040&scrollMargin=100",
 
+    "__language_homepage_titles__": "__titles for available languages homepages__",
+    "en_homepage_title": "KANDELO - natural handmade candles",
+    "de_homepage_title": "KANDELO - handgemachte Kerzen",
+    "pl_homepage_title": "KANDELO - wyjątkowe świece naturalne"
 
-    "correct_user_login": "jdoe@gmail.com",
-    "correct_user_pass": "jdoe1234",
-    "incorrect_user_login": "jdoe12",
-    "username": "admin@yourstore.com",
-    "password": "admin"
   }
 

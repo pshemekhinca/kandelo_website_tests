@@ -27,22 +27,16 @@ class MainPageTests(BaseTestClass):
                          f"Required number of images in slider do not match quantity on web {self.web['main_url']}")
 
     @screenshot
-    def test_correct_action_title_after_main_page_ENGLISH_button_click(self):
-        expected_text = 'KANDELO - natural handmade candles'
-        self.main_page.visit().click_button(self.en_menu_button_xpath)
-        self.assert_page_title(self.driver.current_url, expected_text)
-
-    @screenshot
-    def test_correct_action_title_after_main_page_DEUTSCH_button_click(self):
-        expected_text = 'KANDELO - handgemachte Kerzen'
-        self.main_page.visit().click_button(self.de_menu_button_xpath)
-        self.assert_page_title(self.driver.current_url, expected_text)
-
-    @screenshot
-    def test_correct_action_title_after_main_page_POLSKI_button_click(self):
-        expected_text = 'KANDELO - wyjątkowe świece naturalne'
-        self.main_page.visit().click_button(self.pl_menu_button_xpath)
-        self.assert_page_title(self.driver.current_url, expected_text)
+    def test_linked_page_title_after_each_main_page_menu_button_click(self):
+        data = {self.web['en_homepage_title']: self.en_menu_button_xpath,
+                self.web['de_homepage_title']: self.de_menu_button_xpath,
+                self.web['pl_homepage_title']: self.pl_menu_button_xpath}
+        for key, value in data.items():
+            with self.subTest(key):
+                expected_text = key
+                self.main_page.visit().click_button(value)
+                self.assert_page_title(self.driver.current_url, expected_text)
+                self.driver.back()
 
     @screenshot
     def test_correct_email_link_href_value(self):
@@ -50,21 +44,3 @@ class MainPageTests(BaseTestClass):
         self.main_page.visit()
         href_value = self.driver.find_element_by_xpath(self.mail_address_xpath).get_attribute('href')
         self.assertEqual(expected_text, href_value, f'Expected email link differ from {href_value}')
-
-    def get_page_title(self, url):
-        """WebDriver gets webpage title of given url
-        :param url: given url
-        :return: webpage title text
-        """
-        self.driver.get(url)
-        return self.driver.title
-
-    def assert_page_title(self, url, expected_title):
-        """Method for title page test
-        :param url: given url
-        :param expected_title: expected webpage title according to documentation
-        :return: None
-        """
-        actual_title = self.get_page_title(url)
-        self.assertEqual(expected_title, actual_title,
-                         f'Expected title differ from actual on page: {url}')

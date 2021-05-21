@@ -13,3 +13,21 @@ class BaseTestClass(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
+
+    def get_page_title(self, url):
+        """WebDriver gets webpage title of given url
+        :param url: given url
+        :return: webpage title text
+        """
+        self.driver.get(url)
+        return self.driver.title
+
+    def assert_page_title(self, url, expected_title):
+        """Method for title page test
+        :param url: given url
+        :param expected_title: expected webpage title according to documentation
+        :return: None
+        """
+        actual_title = self.get_page_title(url)
+        self.assertEqual(expected_title, actual_title,
+                         f'Expected title differ from actual on page: {url}')
