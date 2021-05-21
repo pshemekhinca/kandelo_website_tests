@@ -34,9 +34,9 @@ class MainPageTests(BaseTestClass):
         for key, value in data.items():
             with self.subTest(key):
                 expected_text = key
-                self.main_page.visit().click_button(value)
+                self.main_page.visit()
+                self.click_button(value)
                 self.assert_page_title(self.driver.current_url, expected_text)
-
 
     @screenshot
     def test_correct_email_link_href_value(self):

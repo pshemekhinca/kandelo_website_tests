@@ -11,9 +11,6 @@ class MainPage:
         self.driver.get(self.url)
         return self
 
-    def click_button(self, button_xpath):
-        button = self.driver.find_element_by_xpath(button_xpath)
-        button.click()
-        return self
+
 
 

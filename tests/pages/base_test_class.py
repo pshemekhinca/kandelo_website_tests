@@ -10,6 +10,8 @@ class BaseTestClass(unittest.TestCase):
         self.driver = webdriver.Chrome(executable_path=config['chromedriver_path'])
         self.driver.maximize_window()
         self.main_page = page_factory.main_page(self.driver)
+        self.home_page = page_factory.home_page(self.driver)
+        self.product_page = page_factory.product_page(self.driver)
 
     def tearDown(self):
         self.driver.quit()
@@ -31,3 +33,12 @@ class BaseTestClass(unittest.TestCase):
         actual_title = self.get_page_title(url)
         self.assertEqual(expected_title, actual_title,
                          f'Expected title differ from actual on page: {url}')
+
+    def click_button(self, button_xpath):
+        """Click button action on given xpath element
+        :param button_xpath: given button xpath
+        :return: self
+        """
+        button = self.driver.find_element_by_xpath(button_xpath)
+        button.click()
+        return self
