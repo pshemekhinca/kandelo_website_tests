@@ -1,4 +1,4 @@
-from .base_test_class import BaseTestClass
+from tests.pages.base_test_class import BaseTestClass
 from tests.test_data import web_reader
 from src.utils.wrappers import screenshot
 from locators.locators import MainPageLocators
@@ -36,7 +36,7 @@ class MainPageTests(BaseTestClass):
                 expected_text = key
                 self.main_page.visit().click_button(value)
                 self.assert_page_title(self.driver.current_url, expected_text)
-                self.driver.back()
+
 
     @screenshot
     def test_correct_email_link_href_value(self):

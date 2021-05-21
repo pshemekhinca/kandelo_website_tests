@@ -8,10 +8,17 @@
     "en_faq_url": "https://kandelo.eu/en/faq_en",
     "en_contact_url": "https://kandelo.eu/en/kandelo-homepage?anchorElement=element_1040&scrollMargin=100",
 
-    "__language_homepage_titles__": "__titles for available languages homepages__",
+    "__language_homepages_titles__": "__titles for available languages homepages__",
     "en_homepage_title": "KANDELO - natural handmade candles",
     "de_homepage_title": "KANDELO - handgemachte Kerzen",
-    "pl_homepage_title": "KANDELO - wyjątkowe świece naturalne"
+    "pl_homepage_title": "KANDELO - wyjątkowe świece naturalne",
 
-  }
+    "__header_menu_subpages_titles__": "__",
+    "our_candles_title": "KANDELO - candles from our workshop",
+    "make_candle_title": "KANDELO - make your own candle",
+    "where_to_buy_title": "KANDELO - handmade candles » Where to buy",
+    "faq_title": "KANDELO - frequently asked questions",
+    "contact_title": "KANDELO - natural handmade candles"
+
+}
 
