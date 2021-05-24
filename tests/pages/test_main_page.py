@@ -1,7 +1,7 @@
 from tests.pages.base_test_class import BaseTestClass
 from tests.test_data import web_reader
 from src.utils.wrappers import screenshot
-from locators.locators import MainPageLocators
+from src.pages.locators import MainPageLocators
 
 
 class MainPageTests(BaseTestClass):

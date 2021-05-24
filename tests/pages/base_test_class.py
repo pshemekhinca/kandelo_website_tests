@@ -34,6 +34,13 @@ class BaseTestClass(unittest.TestCase):
         self.assertEqual(expected_title, actual_title,
                          f'Expected title differ from actual on page: {url}')
 
+    def assert_if_element_is_displayed(self, element_xpath):
+        """Checks if web element is displayed
+        :param element_xpath: expected webpage title according to documentation
+        :return: None
+        """
+        self.assertTrue(self.driver.find_element_by_xpath(element_xpath))
+
     def click_button(self, button_xpath):
         """Click button action on given xpath element
         :param button_xpath: given button xpath

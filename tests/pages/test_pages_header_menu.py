@@ -1,10 +1,10 @@
 from tests.test_data import web_reader
 from tests.pages.base_test_class import BaseTestClass
 from src.utils.wrappers import screenshot
-from locators.locators import HeaderLocators
+from src.pages.locators import HeaderLocators
 
 
-class MainPageTests(BaseTestClass):
+class PagesHeaderTests(BaseTestClass):
     web = web_reader.load()
     logo_xpath = HeaderLocators.logo_xpath
     homepage_button_xpath = HeaderLocators.homepage_button_xpath
