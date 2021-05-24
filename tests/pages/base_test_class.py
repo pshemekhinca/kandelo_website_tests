@@ -39,7 +39,8 @@ class BaseTestClass(unittest.TestCase):
         :param element_xpath: expected webpage title according to documentation
         :return: None
         """
-        self.assertTrue(self.driver.find_element_by_xpath(element_xpath))
+        self.assertTrue(self.driver.find_element_by_xpath(element_xpath),
+                        f'Element not found')
 
     def click_button(self, button_xpath):
         """Click button action on given xpath element
