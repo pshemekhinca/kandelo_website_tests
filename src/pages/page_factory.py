@@ -1,6 +1,6 @@
 from src.pages.main_page import MainPage
 from src.pages.home_page import HomePage
-from src.pages.product_page import ProductPage
+from src.pages.products_page import ProductsPage
 
 
 def main_page(driver):
@@ -11,5 +11,5 @@ def home_page(driver):
     return HomePage(driver)
 
 
-def product_page(driver):
-    return ProductPage(driver)
+def products_page(driver):
+    return ProductsPage(driver)

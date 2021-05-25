@@ -11,7 +11,7 @@ class BaseTestClass(unittest.TestCase):
         self.driver.maximize_window()
         self.main_page = page_factory.main_page(self.driver)
         self.home_page = page_factory.home_page(self.driver)
-        self.product_page = page_factory.product_page(self.driver)
+        self.products_page = page_factory.products_page(self.driver)
 
     def tearDown(self):
         self.driver.quit()

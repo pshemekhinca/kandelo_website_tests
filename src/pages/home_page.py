@@ -12,8 +12,14 @@ class HomePage:
         return self
 
     def text_to_input_field(self, input_field_xpath, input_text):
+        """Fill selected input field with given text
+        :param input_field_xpath: given input field xpath
+        :param input_text: text to fill with
+        :return: None
+        """
         input_field = self.driver.find_element_by_xpath(input_field_xpath)
         input_field.send_keys(input_text)
+        return self
 
 
 

@@ -35,3 +35,11 @@ class HomePageLocators:
     sample_email = 'jdoe@oops.op'
     sample_message = 'This is sample message'
 
+
+class ProductsPageLocators:
+    """ Products Page elements """
+    products_titles_xpath = '//*[h1]'
+    top_products_list_xpath = '//*[contains(@groupid, "group_62")]' # minus 2 lines and -2 headers in the group
+    products_gallery_xpath = '//*[@class="gv_gallery" and contains(@style, "530px")]'
+    weight_field_xpath = '//*[contains(strong, "Weight")]'
+    dimensions_field_xpath = '//*[contains(strong, "Dimensions")]'

@@ -3,7 +3,6 @@ from tests.test_data import web_reader
 from src.utils.wrappers import screenshot
 from src.pages.locators import HomePageLocators
 from src.pages import page_factory
-import time
 
 
 class HomePageTests(BaseTestClass):

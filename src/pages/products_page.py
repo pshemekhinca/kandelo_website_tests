@@ -2,10 +2,10 @@ from tests.test_data import web_reader
 from src.pages import page_factory
 
 
-class ProductPage:
+class ProductsPage:
     def __init__(self, driver):
         web = web_reader.load()
-        self.url = web["our_candles_title"]
+        self.url = web["en_products_url"]
         self.driver = driver
 
     def visit(self):
