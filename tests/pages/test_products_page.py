@@ -50,5 +50,5 @@ class ProductsPageTests(BaseTestClass):
         product_dimensions_information = self.driver.find_elements_by_xpath(self.dimensions_field_xpath)
         # products_blocks minus 1 element in the group (one product doesn't have dimensions info)
         self.assertEqual(len(products_blocks)-1, len(product_dimensions_information),
-                         f"Products blocks number not equals dimentions information occurances on web {self.web['en_products_url']}")
+                         f"Products blocks number not equals dimensions information occurances on web {self.web['en_products_url']}")
 
