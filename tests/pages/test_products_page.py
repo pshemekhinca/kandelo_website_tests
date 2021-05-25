@@ -28,7 +28,7 @@ class ProductsPageTests(BaseTestClass):
         galleries_list = self.driver.find_elements_by_xpath(self.products_gallery_xpath)
 
         self.assertEqual(len(products_blocks), len(galleries_list),
-                         f"Required number of page sections does not match quantity on web {self.web['en_products_url']}")
+                         f"Required number of page sections does not match product galleries quantity on web {self.web['en_products_url']}")
 
     @screenshot
     def test_product_weight_information_number_equals_product_blocks_quantity(self):
