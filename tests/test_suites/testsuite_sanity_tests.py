@@ -1,6 +1,7 @@
 import unittest
 from tests.pages.test_main_page import MainPageTests
 from tests.pages.test_home_page import HomePageTests
+from tests.pages.test_pages_header_menu import PagesHeaderTests
 from tests.pages.test_products_page import ProductsPageTests
 
 
@@ -15,6 +16,8 @@ def sanity_suite():
     test_suite.addTest(ProductsPageTests('test_product_blocks_number_equals_products_image_galleries'))
     test_suite.addTest(ProductsPageTests('test_product_weight_information_number_equals_product_blocks_quantity'))
     test_suite.addTest(ProductsPageTests('test_product_dimension_information_number_equals_product_blocks_quantity'))
+    test_suite.addTest(PagesHeaderTests('test_correct_page_redirection_after_logo_click'))
+    test_suite.addTest(PagesHeaderTests('test_correct_page_redirection_after_menu_button_click'))
 
     return test_suite
 

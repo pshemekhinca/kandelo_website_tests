@@ -22,7 +22,7 @@ class PagesHeaderTests(BaseTestClass):
         self.assert_page_title(self.driver.current_url, expected_text)
 
     @screenshot
-    def test_correct_page_redirection_after_logo_click1(self):
+    def test_correct_page_redirection_after_menu_button_click(self):
         data = {self.web["en_homepage_title"]: self.homepage_button_xpath,
                 self.web["our_candles_title"]: self.our_candles_button_xpath,
                 self.web["make_candle_title"]: self.make_candle_button_xpath,
