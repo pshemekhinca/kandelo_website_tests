@@ -28,7 +28,7 @@ Tests are ordered according to Page-object-model (POM) assumptions.
 
 
   
-[Back to the Top ^](#Tile-Calculator)
+[Back to the Top ^](#Table-of-Contents)
 
 ---
 
@@ -87,6 +87,7 @@ The project files should be ordered as below:
     |
     `--- README.md
 
+[Back to the Top ^](#Table-of-Contents)
 
 ---
 
@@ -111,7 +112,7 @@ python -m pytest tests/test_suites/testsuite_all_kandelo_tests.py --alluredir ./
 ```
 libs/allure-2.13.9/bin/allure serve ./results  
 ```
-[Back to the Top ^](#Tile-Calculator)
+[Back to the Top ^](#Table-of-Contents)
 
 ---
 
@@ -119,4 +120,4 @@ libs/allure-2.13.9/bin/allure serve ./results
 
 - Przemyslaw Hinca -> Github: [pshemekhinca](https://github.com/pshemekhinca)
 
-[Back to the Top ^](#Tile-Calculator)
+[Back to the Top ^](#Table-of-Contents)
