@@ -91,7 +91,7 @@ The project files should be ordered as below:
 
 ---
 
-###How To Run Tests
+### How To Run Tests
 To run all tests, type:
 
 ```
