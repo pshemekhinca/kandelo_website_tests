@@ -1,0 +1,6 @@
+/venv/
+/.idea/
+.gitignore
+/TestCaseTemplate.xls
+/testScenario.xlsx
+/testScenarios-kandelo.xlt
