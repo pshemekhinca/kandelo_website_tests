@@ -11,7 +11,7 @@ Tests are ordered according to Page-object-model (POM) assumptions.
 
 ### Table of Contents
 
-
+- [Technologies](#Technlogies)
 - [Files Structure](#Files-Structure)
 - [How To Run Tests](#How-To-Run-Tests)
 - [Autho Info](#author-info)
@@ -20,7 +20,7 @@ Tests are ordered according to Page-object-model (POM) assumptions.
 
 
 
-#### Technologies
+### Technologies
 
 - pytest 6.2
 - selenium 3.141
