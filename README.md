@@ -80,10 +80,10 @@ The project files should be ordered as below:
     |    |     |--- web.json
     |    |     `--- web_reader.py
     |    | 
-    |    |---  test_suites
-    |    |     |--- testsuite_all_kandelo_tests.py
-    |    |     |--- testsuite_sanity_tests.py
-    |    |     `--- testsuite_smke_tests.py
+    |    `---  test_suites
+    |          |--- testsuite_all_kandelo_tests.py
+    |          |--- testsuite_sanity_tests.py
+    |          `--- testsuite_smke_tests.py
     |
     `--- README.md
 
