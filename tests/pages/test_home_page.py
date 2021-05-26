@@ -15,7 +15,7 @@ class HomePageTests(BaseTestClass):
     sent_message_xpath = HomePageLocators.sent_message_xpath
 
     @screenshot
-    def test_number_of_page_sections_with_h1_title(self):
+    def test_number_of_home_page_sections_with_h1_title(self):
         expected_images_number = 8
         self.home_page.visit()
         page_sections = self.driver.find_elements_by_xpath(self.h1_titles_xpath)

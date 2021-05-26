@@ -27,7 +27,7 @@ class MainPageTests(BaseTestClass):
                          f"Required number of images in slider do not match quantity on web {self.web['main_url']}")
 
     @screenshot
-    def test_linked_page_title_after_each_menu_button_click(self):
+    def test_linked_page_title_after_each_main_page_menu_button_click(self):
         data = {self.web['en_homepage_title']: self.en_menu_button_xpath,
                 self.web['de_homepage_title']: self.de_menu_button_xpath,
                 self.web['pl_homepage_title']: self.pl_menu_button_xpath}
