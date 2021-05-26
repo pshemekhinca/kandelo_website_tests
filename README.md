@@ -12,8 +12,8 @@ Tests are ordered according to Page-object-model (POM) assumptions.
 ### Table of Contents
 
 
-- [Files Structure](#Files-structure)
-- [How To Run Tests](#How-to-run-tests)
+- [Files Structure](#Files-Structure)
+- [How To Run Tests](#How-To-Run-Tests)
 - [Autho Info](#author-info)
 
 ---
